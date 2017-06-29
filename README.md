@@ -1,1 +1,1 @@
-# ecopolitech.github.io
+# ecopolitech.com
