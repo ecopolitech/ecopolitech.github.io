@@ -1,0 +1,3 @@
+[submodule "themes/elate"]
+	path = themes/elate
+	url = https://github.com/Muao/hugo-elate-theme.git
