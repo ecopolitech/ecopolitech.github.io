@@ -18,3 +18,5 @@ document.addEventListener('keydown', (event) => {
     menu.focus();
   }
 });
+
+document.querySelector('#copyright-year').textContent = String(new Date().getFullYear());
