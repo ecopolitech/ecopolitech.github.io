@@ -64,3 +64,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #55892a;outline-offset:5p
 
 /* Keep the architectural illustration on desktop only. */
 @media(max-width:1024px){.hero{background:#f8f9f3}.hero .wrap{min-height:0;padding:48px 0}.hero-copy{max-width:720px}.hero-art{display:none}}
+
+/* Center the logo and address around a shared row of contact links. */
+@media(max-width:800px){
+  .footer-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 10px;align-items:start;text-align:center}
+  .footer .brand{grid-column:1/-1;justify-self:center;height:auto;margin:0}
+  .footer .contact{min-width:0;font-size:clamp(10px,2.8vw,14px);line-height:1.6}
+  .footer .contact b{font-size:clamp(9px,2.3vw,11px);margin-bottom:4px}
+  .footer .contact:last-child{grid-column:1/-1;justify-self:center;font-size:13px}
+  .footer .contact a{text-underline-offset:3px}
+  .footer .contact a[href^="tel:"],.footer .contact a[href^="mailto:"]{white-space:nowrap}
+  .footer .copyright{margin-top:24px;line-height:1.6}
+}
